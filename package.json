@@ -1,6 +1,6 @@
 {
   "name": "@marineyachtradar/signalk-wasm",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "MaYaRa Radar - Multi-brand marine radar integration for SignalK",
   "scripts": {
     "build": "node build.js",
@@ -53,5 +53,8 @@
   "files": [
     "plugin.wasm",
     "public/**/*"
-  ]
+  ],
+  "dependencies": {
+    "@marineyachtradar/mayara-gui": "^0.5.3"
+  }
 }

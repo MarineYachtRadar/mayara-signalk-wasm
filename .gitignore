@@ -6,3 +6,7 @@
 *.log   
 *.tmp
 
+# WASM build artifacts
+target/
+*.wasm
+public/
