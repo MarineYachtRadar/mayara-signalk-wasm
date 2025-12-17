@@ -1,0 +1,57 @@
+{
+  "name": "@marineyachtradar/signalk-wasm",
+  "version": "0.5.0",
+  "description": "MaYaRa Radar - Multi-brand marine radar integration for SignalK",
+  "scripts": {
+    "build": "node build.js",
+    "build:test": "node build.js --test",
+    "build:no-pack": "node build.js --no-pack",
+    "test": "echo 'Tests run via cargo in CI'"
+  },
+  "wasmManifest": "plugin.wasm",
+  "wasmCapabilities": {
+    "rawSockets": true,
+    "dataWrite": true,
+    "radarProvider": true
+  },
+  "signalk": {
+    "displayName": "MaYaRa Radar",
+    "appIcon": "public/assets/mayara_logo.png",
+    "appstore": {
+      "displayName": "MaYaRa Radar",
+      "categories": [
+        "utilities"
+      ],
+      "description": "MaYaRa Radar - Multi-brand marine radar integration for SignalK"
+    },
+    "webapp": {
+      "name": "MaYaRa Radar",
+      "description": "MaYaRa Radar - Multi-brand marine radar integration for SignalK",
+      "location": "/plugins/mayara-radar/"
+    }
+  },
+  "keywords": [
+    "signalk-node-server-plugin",
+    "signalk-wasm-plugin",
+    "signalk-webapp",
+    "radar",
+    "marine",
+    "furuno",
+    "navico",
+    "raymarine",
+    "garmin"
+  ],
+  "author": "MarineYachtRadar Contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarineYachtRadar/mayara-signalk-wasm"
+  },
+  "engines": {
+    "signalk": ">=2.0.0"
+  },
+  "files": [
+    "plugin.wasm",
+    "public/**/*"
+  ]
+}
