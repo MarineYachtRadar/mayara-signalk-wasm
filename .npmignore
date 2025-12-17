@@ -1,0 +1,8 @@
+# coding
+.vscode/
+
+# Build files
+*.tgz
+*.log   
+*.tmp
+
